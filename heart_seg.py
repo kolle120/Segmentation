@@ -1,6 +1,6 @@
 from keras.models import Sequential
 from keras.layers import Dropout, Activation
-from keras.layers import Convolutioanl2D, MaxPooling2D
+from keras.layers import Convolutionl2D, MaxPooling2D
 from keras.optimizers import SGD
 
 model = Sequential()
