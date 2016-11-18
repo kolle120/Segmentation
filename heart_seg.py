@@ -26,7 +26,7 @@ model.add(Convolutioanl2D(1, 1, 1, init='uniform', activation='relu', border_mod
 #output image = 56x56
 
 #upsample the output to match input dimensions = 224x224
-sgd = SGD(1r=0.1, decay=1e-6, momentum=0.9, nesterov=True)
+sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
 
 model.fit(X_train, Y_train, nb_epoch=1, batch_size=32)
